@@ -32,4 +32,14 @@
         <property name="characterEncoding" value="UTF-8"/>
     </bean>
 
+    <!-- https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-config-static-resources   -->
+    <mvc:resources mapping="/css/**"
+                   location="/css/"/>
+
+    <mvc:resources mapping="/img/**"
+                   location="/img/"/>
+
+    <mvc:resources mapping="/js/**"
+                   location="/js/"/>
+
 </beans>
